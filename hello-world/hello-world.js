@@ -3,6 +3,5 @@
 // convenience to get you started writing code faster.
 //
 
-export const hello = () => {
-  console.log("Hello, World!");
-};
+export const hello = () => 'Hello, World!';
+;
