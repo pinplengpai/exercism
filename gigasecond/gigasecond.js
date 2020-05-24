@@ -3,15 +3,10 @@
 // convenience to get you started writing code faster.
 //
 
-export const gigasecond = () => {
-  const GIGASECOND = Math.pow(10, 12);
-
-  const  Gigasecond = function(day) {
-	/* Adds a gigasecond (10^9 seconds) to a date */
-	this.day = day;
+export const gigasecond = (startDate) => {
+ const startTime = startDate.getTime();
+ const endDate = new Date(startTime + 1000000000000)
+ return endDate
 };
 
-  // The date a gigasecond later
-  Gigasecond.prototype.date = function() { 
-  return new Date(this.day.getTime() + GIGASECOND);
-};
+
